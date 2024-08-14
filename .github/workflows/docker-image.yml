@@ -16,5 +16,3 @@ jobs:
     - uses: actions/checkout@v4
     - name: Build the Docker image
       run: docker build -t stock-trader-bot .
-# you can change the timezone to be region specific
-docker run --rm -it -e "TZ=America/New_York" -d -p 5000:5000 stock-trader-bot
